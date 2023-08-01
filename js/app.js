@@ -43,14 +43,15 @@ window.addEventListener("mousemove", (e) =>{
 });
 
 
-// if (window.innerWidth <= 725){
-//     main.style.maxHeight = `${window.innerWidth * 0.6}px`;
-// } else {
-//     main.style.maxHeight = `${window.innerWidth * 1.6}px`;
-// }   
+if (window.innerWidth <= 725){
+    main.style.maxHeight = `${window.innerWidth * 0.6}px`;
+} else {
+    main.style.maxHeight = `${window.innerWidth * 1.6}px`;
+}   
 
 // GSAP animation
 let timeline = gsap.timeline();
+
 
 timeline
 Array.from(parallax_el)
