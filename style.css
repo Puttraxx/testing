@@ -320,7 +320,10 @@ main{
 }
 /* -------------------------------------------------------------------------------- */
 
-
+article{
+    background-color: red;
+    height: 500px;
+}
 
 
 
@@ -544,7 +547,7 @@ main{
 
 @media (max-width: 450px){
     .mountain-4{
-        left: -40px;
+        left: -600px;
         top: 700px;
     }
 }
@@ -552,6 +555,7 @@ main{
 @media (max-width: 600px){
     .mountain-4{
         top: 530px;
+        left: -50px;
     }
 }
 
