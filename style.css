@@ -117,65 +117,65 @@ main{
 .bg-img{
     z-index: 1;
     position: absolute;
-    width: 194.44%;
-    top: 2.86%;
-    left: 50.69%
+    /* width: 194.44%; */   width: 2800px;
+    /* top: 2.86%; */       top: calc(50% - 390px);
+    /* left: 50.69% */      left: calc(50% + 10px);
 }
 
 .fog-7{
     z-index: 2;
     position: absolute;
-    width: 132%;
-    top: 37.7%;
-    left: 70.8%;
+    /* width: 132%; */      width: 1900px;
+    /* top: 37.7%; */       top: calc(50% - 100px);
+    /* left: 70.8%; */      left: calc(50% + 300px);
 }
 
 .mountain-10{
     z-index: 3;
     position: absolute;
-    width: 60.4%;
-    top: 56.04%;
-    left: 50.69%
+    /* width: 60.4%; */     width: 870px;
+    /* top: 56.04%; */      top: calc(50% + 69px);
+    /* left: 50.69% */      left: calc(50% + 230px);
 }
 
 .fog-6{
     z-index: 4;
     position: absolute;
-    width: 122.2%;
-    top: 60.49%;
-    left: 62.75%;
+    /* width: 122.2%; */    width: 1833px;
+    /* top: 60.49%; */      top: calc(50% + 95px);
+    /* left: 62.75%; */     left: calc(50% + 7px);
 }
 
 .mountain-9{
     z-index: 5;
     position: absolute;
-    width: 32.15%;
-    top: 71.69%;
-    left: 15.75%;
+    /* width: 32.15%; */    width: 463px;
+    /* top: 71.69%; */      top: calc(50% + 119px);
+    /* left: 15.75%; */     left: calc(50% - 457px);
 }
 
 .mountain-8{
     z-index: 6;
     position: absolute;
-    width: 54.58%;
-    top: 61.85%;
-    left: 35.98%;
+    /* width: 54.58%; */    width: 786px;
+    /* top: 61.85%; */      top: calc(50% + 96px);
+    /* left: 35.98%; */     left: calc(50% - 202px);
 }
 
 .fog-5{
     z-index: 7;
     position: absolute;
-    width: 31.25%;
-    top: 69.75%;
-    left: 51.38%;
+    /* width: 31.25%; */      width: 449px;
+    /* top: 69.75%; */        top: calc(50% + 171px);
+    /* left: 51.38%; */       left: calc(50% + 29px);
 }
 
 .mountain-7{
     z-index: 8;
     position: absolute;
-    width: 35.76%;
-    top: 66.54%;
-    left: 71.18%;
+    /* width: 35.76%; */    width: 515px;
+    /* top: 66.54%; */      top: calc(50% + 134px);
+    /* left: 71.18%; */     left: calc(50% + 305px);
 }
 
 
@@ -209,73 +209,73 @@ main{
 .mountain-6{
     z-index: 10;
     position: absolute;
-    width: 26.66%;
-    top: 60.67%;
-    left: 89.93%;
+    /* width: 26.66%; */    width: 383.5px;
+    /* top: 60.67%; */      top: calc(50% + 86.5px);
+    /* left: 89.93%; */     left: calc(50% + 590px);
 }
 
 .fog-4{
     z-index: 11;
     position: absolute;
-    width: 40.97%;
-    top: 60.67%;
-    left: 45.84%;
+    /* width: 40.97%; */    width: 543px;
+    /* top: 60.67%; */      top: calc(50% + 242px);
+    /* left: 45.84%; */     left: calc(50% - 64px);
 }
 
 .mountain-5{
     z-index: 12;
     position: absolute;
-    width: 40.48%;
-    top: 83.2%;
-    left: 59.02%;
+    /* width: 40.48%; */    width: 583px;
+    /* top: 83.2%; */       top: calc(50% + 199px);
+    /* left: 59.02%; */     left: calc(50% + 130px);
 }
 
 .fog-3{
     z-index: 13;
     position: absolute;
-    width: 111.11%;
-    top: 63.95%;
-    left: 48.96%;
+    /* width: 111.11%; */   width: 1435px;
+    /* top: 63.95%; */      top: calc(50% + 149px);
+    /* left: 48.96%; */     left: calc(50% - 28px);
 }
 
 .mountain-4{
     z-index: 14;
     position: absolute;
-    width: 49.79%;
-    top: 68.64%;
-    left: 23.51%;
+    /* width: 49.79%; */    width: 717px;
+    /* top: 68.64%; */      top: calc(50% + 141px);
+    /* left: 23.51%; */     left: calc(50% - 381.5px);
 }
 
 .mountain-3{
     z-index: 15;
     position: absolute;
-    width: 29.09%;
-    top: 63.95%;
-    left: 101.11%;
+    /* width: 29.09%; */    width: 419px;
+    /* top: 63.95%; */      top: calc(50% + 133px);
+    /* left: 101.11%; */    left: calc(50% + 736px);
 }
 
 .fog-2{
     z-index: 16;
     position: absolute;
-    width: 98.47%;
-    top: 64.44%;
-    left: 47.92%;
+    /* width: 98.47%; */    width: 1418px;
+    /* top: 64.44%; */      top: calc(50% + 177px);
+    /* left: 47.92%; */     left: calc(50% - 30px);
 }
 
 .mountain-2{
     z-index: 17;
     position: absolute;
-    width: 43.4%;
-    top: 64.56%;
-    left: 75.83%;
+    /* width: 43.4%; */     width: 625px;
+    /* top: 64.56%; */      top: calc(50% + 138px);
+    /* left: 75.83%; */     left: calc(50% + 362px);
 }
 
 .mountain-1{
     z-index: 18;
     position: absolute;
-    width: 31.25%;
-    top: 61.23%;
-    left: 5.84%;
+    /* width: 31.25%; */    width: 450px;
+    /* top: 61.23%; */      top: calc(50% + 91.5px);
+    /* left: 5.84%; */      left: calc(50% - 641px);
 }
 
 .sun-rays{
@@ -301,9 +301,9 @@ main{
 .fog-1{
     z-index: 21;
     position: absolute;
-    width: 111.8%;
-    top: 59.26%;
-    left: 50.69%;
+    /* width: 111.8%; */    width: 1600px;
+    /* top: 59.26%; */      top: calc(100% - 355px);
+    /* left: 50.69%; */     left: calc(50% - 0px);
 }
 
 .vignette{
@@ -339,7 +339,7 @@ main{
 /* RESPONSIVE (wajib blok gausa males) */
 @media (max-width: 1100px){
     .text h1{
-        font-size: 5.8rem;
+        font-size: 6.8rem;
     }
     .text h2{
         font-size: 4.7rem;
@@ -378,9 +378,17 @@ main{
         width: 30px;
     }
 
+    .mountain-1{
+        left: 10px;
+    }
+
+    .mountain-4{
+        left: 30px;
+    }
+
 
     /* imgs */
-    .bg-img{
+    /* .bg-img{
         width: initial;
         height: 311.104%;
     }
@@ -473,7 +481,7 @@ main{
     .fog-1{
         width: initial;
         height: 178.88%;
-    }
+    } */
 }
 
 @media (max-width: 520px){
@@ -502,6 +510,16 @@ main{
     header nav{
         padding: 0 0.5rem;
     }
+
+    .mountain-1{
+        left: 20px;
+        top: 50%;
+    }
+
+    .mountain-4{
+        top: 600px;
+    }
+
 }
 
 @media (max-width: 360px){
@@ -515,5 +533,30 @@ main{
 
     .hamburger{
         display: none;
+    }
+
+    .mountain-4{
+        left: -60px;
+        top: 80%;
+    }
+}
+
+
+@media (max-width: 450px){
+    .mountain-4{
+        left: -40px;
+        top: 700px;
+    }
+}
+
+@media (max-width: 600px){
+    .mountain-4{
+        top: 530px;
+    }
+}
+
+@media (max-width: 650px){
+    .mountain-4{
+        top: 500px;
     }
 }
