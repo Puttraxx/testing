@@ -561,6 +561,10 @@ footer{
     .mountain-4{
         display: none;
     }
+    
+    .mountain-1{
+        top: 420px;
+    }
 }
 
 @media (max-width: 600px){
