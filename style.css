@@ -1,3 +1,4 @@
+/* default */
 *,
 *::before,
 *::after{
@@ -14,13 +15,20 @@ body{
 }
 
 ::selection{
-    background-color: rgba(105, 105, 105, 0.4);
+    background-color: rgba(91, 170, 194, 0.4);
 }
+/* -------------------------------------------------------------------- */
+
+
+
+
+/* ------------------------------------------------------------------------------ */
 
 /* NAVIGATION */
 header{
+    background: rgba(71, 71, 71, 0.1);
     z-index: 6969;
-    position: absolute;
+    position: fixed;
     padding: 0.9rem 0;
     top: 0;
     left: 0;
@@ -30,17 +38,20 @@ header{
 }
 
 header nav{
-    max-width: 1400px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .headlogo{
-    width: 110px;
-
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
 }
 
 header ul{
@@ -54,10 +65,11 @@ header ul a{
     color: #fff;
     padding: 0 1.5rem;
     font-weight: 300;
-    font-size: 0,83rem;
+    font-size: 0.93rem;
 }
 
 .hamburger{
+    display: none;
     padding-left: 3rem;
 }
 .hamburger a{
@@ -68,7 +80,7 @@ header ul a{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: rgba(115, 115, 115, 0.7);
+    background-color: rgba(86, 86, 86, 0.7);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
@@ -96,7 +108,7 @@ header ul a{
 .hamburger .bar::after{
     top: 4.5px;
 }
-/* ----------------------------- */
+/* --------------------------------------------------------------------------- */
 
 
 /* parallax homepage */
@@ -105,6 +117,7 @@ main{
     height: 100vh;
     overflow: hidden;
     position: relative;
+    background-color: #333;
 }
 
 .parallax{
@@ -113,6 +126,7 @@ main{
     transition: 0.45s cubic-bezier(.2,.49,.32,.99);
 }
 
+/* ------------------------------------------------------------------------ */
 
 /* parallax imgs */
 .bg-img{
@@ -179,8 +193,6 @@ main{
     /* left: 71.18%; */     left: calc(50% + 305px);
 }
 
-
-
 .text{
     font-family: 'Poppins', sans-serif;
     position: absolute;
@@ -204,8 +216,6 @@ main{
     font-size: 8rem;
     line-height: 0.88;
 }
-
-
 
 .mountain-6{
     z-index: 10;
@@ -321,265 +331,522 @@ main{
 }
 /* -------------------------------------------------------------------------------- */
 
-article{
-    padding: 1rem;
-    font-family: 'Poppins', sans-serif;
-    background-color: #fff;
-    color: #333;
-    height: 500px;
+/* gaps */
+.gap{
+    font-family: 'Kanit', sans-serif;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1.3rem;
+}
+
+.gap1{
+    color: rgb(248, 238, 225);
+    background: #333;
+}
+
+.gap2{
+    background: #333;
+    color: rgb(248, 238, 225); 
+}
+
+.gap3{
+    background: rgb(54, 87, 85);
+    color: rgb(248, 238, 225);
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* page 2 */
+
+
+article{
+    padding: 50px 0 80px 0;
+    color: rgb(248, 238, 225);
+    background: linear-gradient(to left,rgb(73, 134, 134), rgb(81, 125, 118), rgb(62, 98, 95), rgb(54, 87, 85));
+}
+
+article h1{
+    text-shadow: 10px -5px 1px #222;
+    text-transform: uppercase;
+    padding: 1rem 6rem 0.2rem 6rem;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-bottom: 2px solid #d6d6d6;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem;
+}
+
+article .pp{
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.description-1{
+    padding: 0 15% 20px 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-1 .desc-p1 p{
+    text-align: start;
+    margin-right: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fa-1{
+    color: white;
+    padding: 0 0 0 0.5rem;
+}
+
+.description-1 .desc-img1 .potobareng{
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #fff;
+}
+
+.description-2{
+    padding: 0 15% 0 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-2 .desc-img2 .slebew{
+    width: 420px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #fff;
+}
+
+.description-2 .desc-p2 p{
+    text-align: end;
+    margin-left: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fa-2{
+    color: white;
+    padding: 0 0.5rem 0 0rem;
+}
+/* --------------------------------------------------------------- */
+
+/* page 3 */
+.timpeg{
+    color: rgb(248, 238, 225);
+    background-image: url("tjkt2-assets/images/mountaingg.png");
+    /* background-attachment:scroll; */
+}
+
+.timpeg h1{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: rgb(81, 125, 118);
+    text-shadow: 10px -5px 1px rgb(48, 48, 48); 
+    margin: 2rem 0 0 0;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem;
+}
+/* ----------------------------------------------------------------------------------------------------------*/
+
+/* card */
+.arianagrande{
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
 }
 
-footer{
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-content{
+    width: 350px;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0 0 12px white;
+}
+
+.cardcard{
+    border-radius: 25px;
+    background-color: #FFF;
+}
+.image-content,
+.card-content{
     font-family: 'Poppins', sans-serif;
-    color:#fff;
-    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-45deg, rgb(73, 134, 134), rgb(81, 125, 118), rgb(62, 98, 95), rgb(54, 87, 85));
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(73, 134, 134);
+}
+
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgb(73, 134, 134);
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+.description{
+    font-size: 14px;
+    color: #707070;
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* RESPONSIVE (wajib blok gausa males) */
-@media (max-width: 1100px){
-    .text h1{
-        font-size: 6.8rem;
-    }
-    .text h2{
-        font-size: 4.7rem;
-    }
+.beton{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: rgb(73, 134, 134);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-@media (max-width: 725px){
-    .text h1{
-        font-size: 5.2rem;
-        line-height: 1.1;
-    }
-    .text h2{
-        font-size: 4.3rem;
-        line-height: 1.1;
-    }
+.beton:hover{
+    background: rgb(40, 73, 73);
+}
+/* --------------------------------------------------------------------------------------------------------------------- */
 
-    .header nav{
-        padding: 0 1rem;
-    }
+/* vnm */
 
-    .headlogo{
-        width: 75px
-    }
-
-    header ul a{
-        font-size: 0.73rem;
-        padding: 0 rem;
-    }
-
-    .hamburger{
-        padding-left: 0.9rem;
-    }
-
-    .hamburger a{
-        height: 30px;
-        width: 30px;
-    }
-
-    .mountain-1{
-        left: 10px;
-    }
-
-    .mountain-4{
-        left: 30px;
-    }
-
-
-    /* imgs */
-    /* .bg-img{
-        width: initial;
-        height: 311.104%;
-    }
-
-    .fog-7{
-        width: initial;
-        height: 211.2%;
-    }
-
-    .mountain-10{
-        width: initial;
-        height: 96.64%;
-    }
-
-    .fog-6{
-        width: initial;
-        height: 195.52%;
-    }
-
-    .mountain-9{
-        width: initial;
-        height: 51.44%;
-    }
-
-    .mountain-8{
-        width: initial;
-        height: 87.232%;
-    }
-
-    .mountain-7{
-        width: initial;
-        height: 57.216%;
-    }
-    
-    .mountain-6{
-        width: initial;
-        height: 42.656%;
-    }
-
-    .fog-4{
-        width: initial;
-        height: 65.552%;
-    }
-
-    .mountain-5{
-        width: initial;
-        height: 64.768%;
-    }
-
-    .fog-3{
-        width: initial;
-        height: 177,776%;
-    }
-
-    .mountain-4{
-        width: initial;
-        height: 79.664%;
-    }
-
-    .mountain-3{
-        width: initial;
-        height: 46.544%;
-    }
-
-    .fog-2{
-        width: initial;
-        height: 157.552%;
-    }
-
-    .mountain-2{
-        width: initial;
-        height: 69.44%;
-    }
-
-    .mountain-1{
-        width: initial;
-        height: 50%;
-    }
-
-    .sun-rays{
-        width: initial;
-        height: 66.096%;
-    }
-
-    .black-shadow{
-        width: initial;
-        height: 160%;
-    }
-
-    .fog-1{
-        width: initial;
-        height: 178.88%;
-    } */
+.vnm{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 50px;
+    font-family: 'Kanit', sans-serif;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 1.2rem;
 }
 
-@media (max-width: 520px){
-    .text h1{
-        font-size: 4.3rem;
-    }
-
-    .text h2{
-        font-size: 3.6rem;
-    }
-
-    .headlogo{
-        width: 60px;
-    }
-
-    header ul a{
-        font-size: 0.63rem;
-        padding: 0 rem;
-    }
-
-    .hamburger a{
-        height: 28px;
-        width: 28px;
-    }
-
-    header nav{
-        padding: 0 0.5rem;
-    }
-
-    .mountain-1{
-        left: 20px;
-        top: 50%;
-    }
-
-    .mountain-4{
-        top: 600px;
-    }
-
+.visi,
+.misi{
+    padding: 0px 10px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
 }
 
-@media (max-width: 360px){
-    .text h1{
-        font-size: 3.6rem;
-    }
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
 
-    .text h2{
-        font-size: 2.9rem;
-    }
-
-    .hamburger{
-        display: none;
-    }
-
-    .mountain-1{
-        left: 0;
-    }
+/* cardssssss */
+.midcards{
+    background: linear-gradient(to top, rgba(34, 34, 34, 0.8), transparent);
+    text-align: center;
+    padding: 50px 35px 100px 35px;
 }
 
-
-@media (max-width: 450px){
-    .mountain-4{
-        display: none;
-    }
-    
-    .mountain-1{
-        top: 420px;
-    }
-
-    .mountain-5{
-        top: 620px;
-    }
+.anadearmas{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (max-width: 600px){
-    .mountain-4{
-        top: 530px;
-        left: -50px;
-    }
+.wrapper {
+    max-width: 1250px;
+    width: 100%;
+    position: relative;
 }
 
-@media (max-width: 650px){
-    .mountain-4{
-        top: 500px;
-    }
+.wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
 }
+
+.wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper i:first-child{
+    color: #222;
+    left: -22px;
+}
+
+.wrapper i:last-child{
+    color: #222;
+    right: -22px;
+}
+
+.wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 11px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 10px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .card {
+    height: 300px;
+    scroll-snap-align: start;
+    list-style: none;
+    background: linear-gradient(to left top, rgb(0, 70, 60), rgb(90, 154, 149));
+    cursor: pointer;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.carousel .card .img {
+    background: transparent;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.card .img img {
+    z-index: 10;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgb(73, 134, 134);
+}
+
+.carousel .card h2 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+
+.carousel .card span {
+    color: #fff;
+    font-size: 14px;
+}
+
+.card{
+    border: 2px solid white;
+    text-align: center;
+    color: #333;
+}
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* page 4 form */
+.kontekin{
+    height: auto;
+    background-color: #ededed;
+}
+
+.iniformya{
+    color: rgb(43, 42, 41);
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vroom h3{
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.vroom{
+    font-family: 'Poppins', sans-serif;
+}
+
+input{
+    width: 280px;
+    height: 50px;
+    margin: 2px;
+    border: none;
+    background: none;
+    border-bottom: 1.5px solid rgb(43, 42, 41);
+    padding: 10px;
+}
+
+input:hover{
+    border: none;
+    outline: none;
+}
+
+textarea{
+    background: none;
+    margin-top: 15px;
+    resize: vertical;
+    width: 100%;
+    height: 150px;
+    border: none;
+    padding: 10px;
+    border: 1.7px solid rgb(43, 42, 41);
+}
+
+.sabmit{
+    width: 30%;
+    padding: 3% 0;
+    position: relative;
+    left: 100%;
+    transform: translate(-100%);
+    top: 0;
+    cursor: pointer;
+    color: rgb(248, 238, 225);
+    background-color: #333;
+    font-size: 1rem;
+    font-weight: 100;
+    border: none;
+    font-family: 'Kanit', sans-serif;
+}
+
+.musrikk{
+    display: none;
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* futer */
+footer{
+    height: 4rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(248, 238, 225);
+    background-color: rgb(54, 87, 85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lnc{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.logobawah{
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.copy{
+    padding-right: 200px;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 2px;
+}
+
+.made{
+    font-size: 0.8rem;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+/* testing */
+
+
+/* ----------------------------------- */
